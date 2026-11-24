@@ -130,7 +130,7 @@ describe("BatchPayModal", () => {
     );
 
     const confirmButton = screen.getByRole("button", { name: /Confirm Payment/i });
-    expect(confirmButton).not.getAttribute("title").toBe("Connect your wallet to continue"
+    expect(confirmButton.getAttribute("title")).not.toBe("Connect your wallet to continue"
     );
   });
 
